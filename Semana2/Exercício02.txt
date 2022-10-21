@@ -1,0 +1,29 @@
+a)Etapa 1: Pré processamento
+Nessa etapa o pré processador faz uma análise geral do código a ser compilado, fazendo
+a inclusão de arquivos, expansão de macros, análise sintática, léxica e semântica. Então,
+um código intermediário (.i) é gerado.
+
+Etapa 2: Compilação
+Nessa etapa, o código é compilado de fato, transformando o código intermediário em linguagem
+assembly (.s).
+
+Etapa 3: Construção
+Na etapa 3 o cógido .s em assembly é transformado em um código objeto (.o/.obj) pelo assembler.
+Esse código é escrito em binário demaneira a já poder ser interpretado pelo computador
+
+Etapa 4: Linkagem
+POr último, a linkagem importa os arquivos das bibliotecas necessários para a interpretação do
+código.
+
+b)-static: Impede que o código compilado seja linkado com bibliotecas compartilhadas
+em sistemas que permitem linkagem dinâmica.
+
+-g: Inclui o log geral de debug no arquivo binário
+
+-pedantic: Emite todos os avisos requeridos pelo padrão ANSI/ISO C
+
+-Wall: Emite todos os avisos geralmente uteis que o gcc é capaz de emitir
+
+-Os: Acusa variáveis que podem não estar inicializadas
+
+-O3: Otimiza o código para o maior nível de otimização possível (3).
