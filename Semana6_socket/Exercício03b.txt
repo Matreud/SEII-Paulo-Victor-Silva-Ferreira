@@ -1,0 +1,12 @@
+1)
+TCP - 65535 bytes
+UDP - 65507 bytes em ipv4 e 65527 bytes em ipv6
+
+2)
+
+Subdividindo pacotes em pacotes menores e enviando-os individualmente, de acordo com o protocolo de comunicação
+
+3)
+
+No Protocolo UDP, não há checagem de chegada de pacotes, podendo existir perdas. Esse sistema prioriza a velocidade de comunicação
+No Protocolo TCP, é necessário que os arquivos sejam de fato transportados, sem perdas. Isso torna o sistema mais lento, porém mais robusto.
